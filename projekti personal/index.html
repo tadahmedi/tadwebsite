@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>CineVerse - Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+    <header>
+        <h1>Cine<span>Verse</span></h1>
+        <nav>
+            <a href="#filmat">Filmat</a>
+            <a href="#orari">Orari</a>
+            <a href="#rezervo">Rezervo</a>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section id="filmat">
+            <h2>Filmat e Javës</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=300" alt="Film">
+                    <h3>Cyberpunk</h3>
+                    <p>Zhanri: Sci-Fi</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=300" alt="Film">
+                    <h3>Galactic</h3>
+                    <p>Zhanri: Adventure</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="orari">
+            <h2>Oraret</h2>
+            <table>
+                <tr><th>Filmi</th><th>Salla</th><th>Çmimi</th></tr>
+                <tr><td>Cyberpunk</td><td>Salla 1</td><td>5 &euro;</td></tr>
+                <tr><td>Galactic</td><td>Salla 2</td><td>6 &euro;</td></tr>
+            </table>
+        </section>
+
+     
+        <section id="rezervo">
+            <h2>Rezervo Biletën</h2>
+            <form>
+                <label>Emri:</label>
+                <input type="text" placeholder="Emri yt" required>
+
+                <label>Filmi:</label>
+                <select>
+                    <option>Cyberpunk</option>
+                    <option>Galactic</option>
+                </select>
+
+                <button type="submit">Dërgo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CineVerse</p>
+    </footer>
+
+</body>
+</html>
