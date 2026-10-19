@@ -1,147 +1,160 @@
-
-:root {
-    --bg: #121212;
-    --card-bg: #1f1f1f;
-    --primary: #e50914;
-    --text: #ffffff;
-}
-
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.5;
-}
-
-
-header {
-    background: #000;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-header h1 span {
-    color: var(--primary);
-}
-
-nav a {
-    color: var(--text);
-    text-decoration: none;
-    margin-left: 1.5rem;
-}
-
-nav a:hover {
-    color: var(--primary);
-}
-
-
-main {
-    padding-top: 80px;
-}
-
-section {
-    padding: 3rem 10%;
-    border-bottom: 1px solid #333;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 1.5rem;
+header {
+    background-color: darkgray;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 1px solid gray;
 }
 
-
-.grid {
+nav {
     display: flex;
-    gap: 2rem;
     justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: orange;
+    color: black;
+}
+
+main {
+    padding-top: 90px;
+    min-height: 500px;
+}
+
+.hero {
+    padding: 45px 15px;
+}
+
+.hero h2, .page-content h2, .card h3 {
+    color: orange;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 15px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: var(--card-bg);
-    width: 250px;
+    background-color: darkgray;
+    padding: 15px;
     border-radius: 8px;
-    overflow: hidden;
-    padding-bottom: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    width: 250px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 140px;
     object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
 }
 
+.card p {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.page-content {
+    padding: 30px 15px;
+}
 
 table {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
     border-collapse: collapse;
-    background: var(--card-bg);
+    background-color: darkgray;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid gray;
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #333;
+    padding: 12px;
+    border-bottom: 1px solid gray;
     text-align: left;
 }
 
 th {
-    background: var(--primary);
+    background-color: orange;
+    color: black;
 }
 
-
-form {
+.booking-form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0px auto;
+    background-color: darkgray;
+    padding: 30px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 8px;
+    gap: 15px;
     text-align: left;
 }
 
-input, select {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #444;
-    background: #111;
-    color: #fff;
+.booking-form label {
+    font-size: 14px;
+    color: lightgray;
 }
 
-button {
-    background: var(--primary);
-    color: #fff;
+.booking-form input {
     padding: 10px;
-    border: none;
     border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background: #000;
-    color: #888;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
 }
