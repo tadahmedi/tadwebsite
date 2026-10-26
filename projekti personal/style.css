@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: darkgray;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 1px solid gray;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: orange;
+    color: black;
+}
+
+main {
+    padding-top: 90px;
+    min-height: 500px;
+}
+
+.hero {
+    padding: 45px 15px;
+}
+
+.hero h2, .page-content h2, .card h3 {
+    color: orange;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: darkgray;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.page-content {
+    padding: 30px 15px;
+}
+
+table {
+    margin: 0px auto;
+    border-collapse: collapse;
+    background-color: darkgray;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid gray;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid gray;
+    text-align: left;
+}
+
+th {
+    background-color: orange;
+    color: black;
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: 0px auto;
+    background-color: darkgray;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.booking-form label {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.booking-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+}
