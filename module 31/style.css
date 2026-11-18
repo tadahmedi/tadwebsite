@@ -1,0 +1,33 @@
+
+
+button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+#rreth, #katror, #trekandsh {
+    display: none;
+    margin-top: 20px;
+}
+
+#rreth {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#katror {
+    width: 180px;
+    height: 100px;
+    background-color: blue;
+}
+
+#trekandsh {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
